@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace ManagerWareHouse.DAL.Models
 {
     [Table("User")]
-    public class User
+    public class User : IdentityUser
     {
         public int IDUser { get; set; }
         public string NameUser { get; set; }
